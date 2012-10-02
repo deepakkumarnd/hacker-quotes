@@ -1,0 +1,108 @@
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-style: italic;
+  }
+
+  a { color: #666; }
+  a:hover { color: #222; text-decoration: underline; }
+  h1 a, h3 a { text-decoration: none; }
+  header, footer, section, article, nav { display: block; }
+  p { margin: .8em 0; }
+
+  #wrapper {
+    color: #444;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 20px auto;
+    width: 700px;
+
+    header { 
+      border-bottom: 1px solid #ddd;
+      overflow: hidden; 
+      padding-bottom: 20px;
+
+      h1.title { 
+        float: left; 
+        padding: 10px 0 0 0; 
+        
+
+        a {
+          color: #333;
+          font-family: Lobster, Georgia, serif;
+          font-style: normal;
+        }
+      }
+    }
+
+    .quote {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      border-left: 5px solid #e8e8e8;
+      font-family: Georgia, serif;
+      font-size: 1.3em;
+      font-style: italic;
+      margin: 40px 0px 0 0px;
+      padding: 0 20px;
+
+      a {text-decoration: none}
+      .body {
+        color: black;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .meta {
+        font-size:0.8em;
+      }
+      .posted-date {
+        font-size: 0.6em;
+        padding-bottom:20px;
+        text-align:right;
+      }
+    }
+
+    .navigation {
+      margin-bottom: 25px;
+      margin-top: 25px;
+      height: 20px;
+      position: relative;
+      width: 100%;
+
+      
+
+      .previous {
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+      }
+
+      .random {
+        bottom: 0px;
+        left: 45%;
+        margin-left: 0px;
+        position: absolute;
+      }
+      .next {
+        bottom: 0px;
+        position: absolute;
+        right: 0px;
+      }
+
+    }
+
+    .page-footer {
+      border-top: 1px solid #ddd;
+      font-size: 0.8em;
+      font-style: italic;
+      padding: 20px;
+      text-align: center;
+    }
+  }  
+}

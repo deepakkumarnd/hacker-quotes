@@ -1,0 +1,16 @@
+<%= form_for @quote, html: { multipart: true } do |f| %>
+  <% if @quote.errors.any? %>
+    <h2><%= pluralize(@quote.errors.count,"error") %>
+      Sorry !! Could not create Quote,pls check your form
+    </h2>
+  <% end %>  
+  <div id = "fields">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %><br />
+    <%= f.label :author_name %><br />
+    <%= f.text_field :author_name %><br />
+    <%= f.label :author_description %><br />
+    <%= f.text_field :author_description%><br />
+    <%= f.submit %> 
+  </div>
+<% end %>
