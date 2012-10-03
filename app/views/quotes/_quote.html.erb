@@ -1,5 +1,6 @@
 <div class="quote">
   <div class="body"><%= quote.body %></div>
+</div>  
   <div class="meta">
     <%= quote.author_name%><%= quote.author_description? ? ", " : " " %>
     <%= quote.author_description%>
@@ -11,4 +12,3 @@
   <div class="posted-date">
     <%= link_to(quote.created_at.strftime("%b, %d, %Y"), quote_path(quote)) %>
   </div>
-</div>
