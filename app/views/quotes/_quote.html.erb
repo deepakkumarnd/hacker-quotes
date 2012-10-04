@@ -4,10 +4,6 @@
   <div class="meta">
     <%= quote.author_name%><%= quote.author_description? ? ", " : " " %>
     <%= quote.author_description%>
-    <% if signed_in? %>
-      <%= link_to "Edit", edit_quote_path(quote) %>
-      <%= link_to("Delete", quote, method: :delete, data: { confirm: "Are you sure?" } ) %>
-    <% end %>
   </div>
   <div class="posted-date">
     <%= link_to(quote.created_at.strftime("%b, %d, %Y"), quote_path(quote)) %>
