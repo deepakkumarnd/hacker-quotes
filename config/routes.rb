@@ -1,11 +1,7 @@
 StartupQuotes::Application.routes.draw do
-  devise_for :users
+  ActiveAdmin.routes(self)
 
-  devise_scope :user do
-    get 'login',    to: "devise/sessions#new"
-    get 'logout',   to: "devise/sessions#destroy"
-  end
-  
+  devise_for :admin_users, ActiveAdmin::Devise.config
   
   resources :quotes
   root :to => 'quotes#index'
