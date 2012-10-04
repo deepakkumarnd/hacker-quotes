@@ -1,14 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
-
 gem 'sqlite3'
-
-gem "devise"
-gem "will_paginate"
-
+gem 'devise'
+gem 'activeadmin'
+gem 'meta_search', '>= 1.1.0.pre'
+gem 'will_paginate', :git => "https://github.com/p7r/will_paginate.git", :branch => "rails3"
 gem 'capistrano'
-
 gem 'randumb'
 
 group :assets do
